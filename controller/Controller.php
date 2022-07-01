@@ -23,9 +23,11 @@ class Controller
                 include 'view/formView.php';
                 break;
             case 'homePage':
+                $postsArr = $this->loader->getAllPosts();
                 include 'view/homePageView.php';
                 break;
             default:
+                $postsArr = $this->loader->getAllPosts();
                 include 'view/homePageView.php';
                 break;
         }

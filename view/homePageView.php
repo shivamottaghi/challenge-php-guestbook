@@ -9,4 +9,17 @@
         <p>All the post will be shown here</p>
     </div>
 </div>
+<div class="row align-items-center">
+    <?php foreach ($postsArr as $post): ?>
+        <div class="col-12 col-md-3">
+            <div class="card w-100 h-100" style="">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $post['name'] . " " . $post['lastName']; ?></h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><?php echo "Date: " . $post['date']; ?></h6>
+                    <p class="card-text"><?php echo $post['message']; ?></p>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>
 
