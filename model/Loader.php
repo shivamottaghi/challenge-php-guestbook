@@ -25,11 +25,7 @@ class Loader
     }
     public function getAllPosts() : array
     {
-        $stdClass = json_decode(file_get_contents('posts.txt'));
-        $posts = [];
-        foreach ($stdClass as $obj){
-            $posts[] = ['name'=>$obj->name, 'lastName' => $obj->lastName, 'email'=>$obj->email, 'date'=>$obj->date, 'message'=>$obj->message];
-        }
-        return $posts;
+        $stdClass = json_decode(file_get_contents('posts.txt',),true);
+        return $stdClass;
     }
 }
