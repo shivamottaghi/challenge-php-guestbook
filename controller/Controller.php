@@ -12,6 +12,9 @@ class Controller
             case 'form':
                 include 'view/formView.php';
                 break;
+            case 'homePage':
+                include 'view/homePageView.php';
+                break;
             default:
                 include 'view/homePageView.php';
                 break;
