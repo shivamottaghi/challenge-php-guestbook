@@ -5,6 +5,8 @@
             <button class="btn btn-outline-success" name="page" value="homePage">Home Page</button>
         </form>
     </div>
+</div>
+<div class="row align-items-center">
     <div class=" text-center mt-5 ">
         <h1>Add a message</h1>
     </div>
@@ -27,7 +29,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_lastname">Lastname *</label>
-                                            <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            <input id="form_lastname" type="text" name="lastName" class="form-control"
                                                    placeholder="Please enter your lastname *" required="required"
                                                    data-error="Lastname is required.">
                                         </div>
