@@ -11,10 +11,9 @@ class Loader
         $this->defineTheArray();
         $file = 'posts.txt';
         $currentFile = file_get_contents($file);
-        $stdClass = json_decode($currentFile);
-        $decodeArr = json_decode(json_encode($stdClass));
-        $decodeArr[] = $this->data;
-        $encodedArr = json_encode($decodeArr);
+        $tempArr = json_decode($currentFile);
+        $tempArr[] = $this->data;
+        $encodedArr = json_encode($tempArr);
         file_put_contents($file, $encodedArr);
     }
     public function defineTheArray(): void{

@@ -64,9 +64,7 @@
                     </div>
                 </div>
             </div>
-            <!-- /.8 -->
         </div>
-        <!-- /.row-->
     </div>
     <<!--form method="post">
         div
