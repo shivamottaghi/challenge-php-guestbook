@@ -1,8 +1,15 @@
 <?php
-include 'model/Post.php';
+include_once ('model/Post.php');
+include_once('model/Loader.php');
 class Controller
 {
     protected string $page = 'homePage';
+    protected Loader $loader;
+
+    public function __construct()
+    {
+        $this->loader = new Loader();
+    }
 
     public function invoke(){
         if (isset($_POST['submitForm'])){
@@ -27,7 +34,7 @@ class Controller
     public function formControll(){
         if (isset($_POST['submitForm'])){
             $post = new Post($_POST['name'], $_POST['lastName'], $_POST['email'], $_POST['message']);
-            $_SESSION['newPost'] = $post;
+            $this->loader->writeDataInFile($post);
             include 'view/submissionView.php';
         }
     }

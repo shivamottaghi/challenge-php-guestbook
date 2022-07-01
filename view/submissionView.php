@@ -11,18 +11,18 @@
         <h5>Your message was successfully saved!</h5>
     </div>
     <div class="col-md-4">
-        <p> <em>First Name : </em> <?php echo $_SESSION['newPost']->getName(); ?></p>
+        <p> <em>First Name : </em> <?php echo $post->getName(); ?></p>
     </div>
     <div class="col-md-4">
-        <p><em>Last Name : </em> <?php echo $_SESSION['newPost']->getLastName(); ?></p>
+        <p><em>Last Name : </em> <?php echo $post->getLastName(); ?></p>
     </div>
     <div class="col-md-4">
-        <p><em>Email : </em> <?php echo $_SESSION['newPost']->getEmail(); ?></p>
+        <p><em>Email : </em> <?php echo $post->getEmail(); ?></p>
     </div>
     <div class="col-md-4">
-        <p><em>Date : </em> <?php echo $_SESSION['newPost']->getDate(); ?></p>
+        <p><em>Date : </em> <?php echo $post->getDate(); ?></p>
     </div>
     <div class="col-md-8">
-        <p><em>Message : </em> <?php echo $_SESSION['newPost']->getMessage(); ?></p>
+        <p><em>Message : </em> <?php echo $post->getMessage(); ?></p>
     </div>
 </div>
