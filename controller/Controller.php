@@ -35,7 +35,7 @@ class Controller
 
     public function formControl(){
         if (isset($_POST['submitForm'])){
-            $post = new Post($_POST['name'], $_POST['lastName'], $_POST['email'], $_POST['message']);
+            $post = new Post(htmlspecialchars( $_POST['name'] , ENT_QUOTES), htmlspecialchars($_POST['lastName'], ENT_QUOTES), htmlspecialchars($_POST['email'], ENT_QUOTES), htmlspecialchars($_POST['message'], ENT_QUOTES));
             $this->loader->writeDataInFile($post);
             include 'view/submissionView.php';
         }

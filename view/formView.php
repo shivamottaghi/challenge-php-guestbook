@@ -66,20 +66,4 @@
             </div>
         </div>
     </div>
-    <<!--form method="post">
-        div
-        <div class="row align-items-center">
-            <div class="col-12 col-md-3 offset-md-3 text-center">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name"
-                       name="firstName">
-            </div>
-            <div class="col-12 col-md-3 text-center">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="First name" name="lastName">
-            </div>
-            <div class="col-10 offset-1 text-center">
-                <label for="messageArea" class="form-label">Write your message</label>
-                <textarea class="form-control" id="messageArea" rows="3"></textarea>
-            </div>
-        </div>
-    </form>-->
 </div>
