@@ -33,7 +33,7 @@ class Controller
         }
     }
 
-    public function formControll(){
+    public function formControl(){
         if (isset($_POST['submitForm'])){
             $post = new Post($_POST['name'], $_POST['lastName'], $_POST['email'], $_POST['message']);
             $this->loader->writeDataInFile($post);

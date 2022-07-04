@@ -18,7 +18,7 @@ session_start();
 
         $controller = new Controller();
         $controller->invoke();
-        $controller->formControll();
+        $controller->formControl();
 
         ?>
     </div>
