@@ -15,7 +15,7 @@ $replaceBadWords = ['f*', 'sh*', 'a*', 'b*'];
 <div class="row align-items-center p-0">
     <?php foreach ($postsArr as $post): ?>
     <?php $filteredMessage = str_replace($badWords, $replaceBadWords, $post['message']);
-          str_replace($textEmojis, $emojis, $filteredMessage);
+        $filteredMessage = str_replace($textEmojis, $emojis, $filteredMessage);
         ?>
         <div class="col-12 col-md-3 h-100">
             <div class="card w-100 h-100" style="">
