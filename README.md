@@ -40,6 +40,6 @@ This is the second time I am trying to implement MVC in my project. I have this 
  To be honest, OOP itself is a challenge and to combine it with MVC, it gives me a real headache!💀 But while working with it, I have really started to like it more ^^
 
 #### Want to add features
-- [ ] User adds emojis
-- [ ] Profanity filter, to filter bad words
-- [ ] Use htmlspecialchars()
+- [x] User adds emojis
+- [x] Profanity filter, to filter bad words
+- [x] Use htmlspecialchars()
